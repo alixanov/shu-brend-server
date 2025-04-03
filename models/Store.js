@@ -10,7 +10,7 @@ const storeSchema = new mongoose.Schema({
   quantity: { type: Number, required: true },
   created_at: { type: Date, default: Date.now },
   updated_at: { type: Date, default: Date.now },
-});
+}); 
 
 // Middleware to update the updated_at field before saving
 storeSchema.pre("save", function (next) {
