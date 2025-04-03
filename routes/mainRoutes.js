@@ -14,6 +14,7 @@ const usdRateController = require("../controllers/UsdRateController"); // USD ku
 router.post("/register", adminController.registerAdmin);
 // Kirish marshruti
 router.post("/login", adminController.loginAdmin);
+
 // Yangi admin yaratish marshruti (faqat autentifikatsiya qilingan adminlar uchun)
 router.post(
   "/create-admin",
